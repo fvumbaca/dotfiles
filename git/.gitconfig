@@ -1,3 +1,11 @@
 [user]
 	name = Frank Vumbaca
 	email = fvumbaca@outlook.com
+[core]
+	editor = nvim
+	commentchar = :
+	excludesfile = /Users/frank/.gitignore_global
+[commit]
+	template = /Users/frank/.gitmessage
+[diff]
+	tool = vimdiff
