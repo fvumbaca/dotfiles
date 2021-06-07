@@ -81,6 +81,15 @@ nmap <leader>T :silent exec "!tmux split-window -h -p 35"<CR>
 nmap <leader>gR :Gread<CR>
 nmap <leader>gg :Git<CR>
 
+" Makefile
+nmap <leader>mm :!make<space>
+nmap <leader>mt :!make test<CR>
+nmap <leader>mb :!make build<CR>
+nmap <leader>mi :!make install<CR>
+nmap <leader>mr :!make run<CR>
+nmap <leader>mp :!make plan<CR>
+nmap <leader>ma :!make apply<CR>
+
 " Utility
 map! <leader>r :source ~/.config/nvim/init.vim<CR>
 
