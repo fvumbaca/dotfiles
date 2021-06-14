@@ -1,4 +1,5 @@
 
+let mapleader=" "
 " map <leader><space> :let @/=''<cr> " clear search
 
 " Plugins
@@ -56,9 +57,13 @@ nmap <leader>gg :Git<CR>
 " Utility
 map! <leader>r :source ~/.config/nvim/init.vim<CR>
 
+" Quick Fix
+nmap <leader>kk :lopen<CR>
+nmap <leader>kn :lnext<CR>
+nmap <leader>kg :copen<CR>
+nmap <leader>km :cnext<CR>
 
 nnoremap <SPACE> <Nop>
-let mapleader=" "
 nnoremap <leader>ps :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep for >")})<CR>
 
 augroup AUTO_MY_LIFE
