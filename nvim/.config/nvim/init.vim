@@ -1,5 +1,5 @@
-
 let mapleader=" "
+nnoremap <SPACE> <Nop>
 " map <leader><space> :let @/=''<cr> " clear search
 
 " Plugins
@@ -48,22 +48,31 @@ colorscheme onedark
 
 " Tmux aliases
 nmap <leader>t :silent exec "!tmux split-window -v -p 20"<CR>
-nmap <leader>T :silent exec "!tmux split-window -h -p 35"<CR>
+vnoremap <leader>T :silent exec "!tmux split-window -h -p 35"<CR>
 
 " Git
-nmap <leader>gR :Gread<CR>
-nmap <leader>gg :Git<CR>
+vnoremap <leader>gR :Gread<CR>
+vnoremap <leader>gg :Git<CR>
 
 " Utility
-map! <leader>r :source ~/.config/nvim/init.vim<CR>
+vnoremap <leader>r :source ~/.config/nvim/init.vim<CR>
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+vnoremap <leader>p "_dP
+nnoremap <leader>y "+y
+vnoremap <leader>y "+y
+nnoremap <leader>Y gg"+yG
+inoremap <C-c> <esc>
+
 
 " Quick Fix
-nmap <leader>kk :lopen<CR>
-nmap <leader>kn :lnext<CR>
-nmap <leader>kg :copen<CR>
-nmap <leader>km :cnext<CR>
+nnoremap <leader>ss :grep -r . -e<space>
+nnoremap <leader>j :cnext<CR>zz
+nnoremap <leader>k :cprev<CR>zz
+nnoremap <leader>K :lprev<CR>zz
+nnoremap <leader>J :lnext<CR>zz
 
-nnoremap <SPACE> <Nop>
+
 nnoremap <leader>ps :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep for >")})<CR>
 
 augroup AUTO_MY_LIFE

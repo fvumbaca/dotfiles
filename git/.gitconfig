@@ -9,3 +9,5 @@
 	template = /Users/frank/.gitmessage
 [diff]
 	tool = vimdiff
+[push]
+	default = current
