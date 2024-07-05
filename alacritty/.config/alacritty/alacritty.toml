@@ -1,0 +1,7 @@
+shell = "/opt/homebrew/bin/bash"
+
+[scrolling]
+history = 100000
+
+[font]
+normal = { family = "UbuntuMono Nerd Font" }
