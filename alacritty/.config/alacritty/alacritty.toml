@@ -1,4 +1,5 @@
 shell = "/opt/homebrew/bin/bash"
+# shell = "/opt/homebrew/bin/nvim -c term"
 
 [scrolling]
 history = 100000
